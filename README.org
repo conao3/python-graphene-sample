@@ -21,6 +21,10 @@
 * Description
 Sample project using graphene.
 
+Sample database using [[https://www.postgresqltutorial.com/postgresql-sample-database/][PostgreSQL Sample Database]].
+
+[[./images/erd.png]]
+
 * Install
 
 * Usage
