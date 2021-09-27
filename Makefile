@@ -1,17 +1,8 @@
 ## Makefile
 
-all:
+.PHONY: all
+all: docker
 
-##################################################
-
-.PHONY: all build test clean
-
-all: build
-
-##############################
-
-build:
-
-test: build
-
-clean:
+.PHONY: docker
+docker:
+	${MAKE} -C docker/postgres

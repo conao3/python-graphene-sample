@@ -1,0 +1,14 @@
+## docker-compose.yml
+
+version: '3.7'
+
+services:
+  db:
+    build:
+      context: docker/postgres
+    environment:
+      - POSTGRES_DB=${DBName}
+      - POSTGRES_USER=${DBUsername}
+      - POSTGRES_PASSWORD=${DBPassword}
+    ports:
+      - ${DBPort}:5432
